@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Wrap Example</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 700px;
+            border: 2px solid black;
+            padding: 10px;
+            background: repeating-linear-gradient(135deg, #f0f0f0 0 20px, #e0e0e0 20px 40px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s;
+            box-sizing: border-box;
+        }
+        .flex-item {
+            background-color: #90cdf4;
+            margin: 5px;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+            border: 1px solid #3182ce;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .flex-item:hover {
+            background-color: #63b3ed;
+            transform: scale(1.07);
+            box-shadow: 0 4px 16px rgba(49,130,206,0.15);
+        }
+    </style>
+</head>
+<body>
+    <h2>Flex-Wrap in Action</h2>
+    <div class="flex-container">
+        <div class="flex-item">Box 1</div>
+        <div class="flex-item">Box 2</div>
+        <div class="flex-item">Box 3</div>
+        <div class="flex-item">Box 4</div>
+        <div class="flex-item">Box 5</div>
+        <div class="flex-item">Box 6</div>
+    </div>
+</body>
+</html>

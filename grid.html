@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Viewport Units Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .box-vw {
+            width: 50vw;
+            height: 100px;
+            background-color: #f44336;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+        }
+        
+        .box-vh {
+            height: 30vh;
+            background-color: #315105;
+            color: white;
+            text-align: center;
+            line-height: 30vh;
+            margin: 10px;
+        }
+        
+        .box-vmin {
+            width: 20vmin;
+            height: 20vmin;
+            background-color: #ff9800;
+            color: white;
+            text-align: center;
+            line-height: 20vmin;
+            margin: 10px;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Viewport Units Example</h1>
+    
+    <div class="container">
+        <div class="box-vw">50vw Width</div>
+        <div class="box-vh">30vh Height</div>
+        <div class="box-vmin">20vmin Size</div>
+    </div>
+</body>
+</html>
